@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Company in Lucknow</title>
+    <!-- <title link rel="logo" href="assets/img/logo.jpg"</title> -->
+        <link rel="icon" href="logo.jpg">
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="assets/js/main.js"></script>
+</head>
+<body>
+  <style>
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #47b2e4;
+}
+
+.navbar .getstarted,
+.navbar .getstarted:focus {
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  border: 2px solid #47b2e4;
+  font-weight: 600;
+}
+
+.navbar .getstarted:hover,
+.navbar .getstarted:focus:hover {
+  color: #fff;
+  background: #31a9e1;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 500;
+  color: #0c3c53;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+  color: #47b2e4;
+}
+
+.navbar .dropdown:hover>ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .navbar .dropdown .dropdown:hover>ul {
+    left: -100%;
+  }
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+.mobile-nav-toggle.bi-x {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(40, 58, 90, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #37517e;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a {
+  color: #47b2e4;
+}
+
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+  color: #37517e;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover>a {
+  color: #47b2e4;
+}
+
+.navbar-mobile .dropdown>.dropdown-active {
+  display: block;
+}
+
+/* Body with CSS Part */
+body
+{
+    background-color:skyblue;
+    font-family: sans-serif;
+    margin-top: inherit;
+}
+    </style>
+</head>
+<body>
+    <!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            call: "9140967607", // Call phone number
+            whatsapp: "6394296293", // WhatsApp number
+            call_to_action: "Please Call ", // Call to action
+            button_color: "#A8CE50", // Color of button
+            position: "left", // Position may be 'right' or 'left'
+            order: "whatsapp,call", // Order of buttons
+        };
+        var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+  </script>
+  <!-- /GetButton.io widget -->
+  
+  
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6301df6637898912e9643cc8/1gavl1bal';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+      <div class="container d-flex align-items-center">
+  
+        <!-- <h1 class="logo me-auto"><a href="#">Digi<span class="text-primary">{</span><span class="text-light">Coders</span><span class="text-primary">}</span></a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+  
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link link scrollto active" href="our website.html">Home</a></li>
+            <li class="dropdown"><a href="about.html"><span>About</span><i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="ourexpert.html">Our Expert</a></li>
+                <li><a href="mou.html">MOU with College</a></li>
+                <li><a href="certificate.html">Certificate and Achievemets</a></li>
+                <li><a href="appreciation.html">Appreciation Letter</a></li>
+              </ul>
+              </li>
+            <li class="dropdown"><a href="#"><span>Services</span><i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="software.html">Software Development</a></li>
+              <li><a href="website.html">Website Development</a></li>
+              <li><a href="mobile.html">Mobile App Development</a></li>
+              <li><a href="digital.html">Digital Marketing</a></li>
+              <li><a href="graphics.html">Graphichs designing</a></li>
+              <li><a href="domainho.html">Domain & Hosting</a></li>
+              <li><a href="erpandcrm.html">ERP & CRM Development</a></li>
+              <li><a href="maintenence.html">Maintenance services</a></li>
+            </ul>
+            </li>
+            <li><a class="nav-link link scrollto" href="registration.html">Registration</a></li>
+            <li class="dropdown"><a href=""><span>Gallary</span><i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="photos.html">Photos Gallary</a></li>
+              <li><a href="video.html">Videos Gallary</a></li>
+            </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Training</span><i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="vocational.html">Vocational Training</a></li>
+                <li><a href="summer.html">Summer Training</a></li>
+                <li><a href="internship.html">Internship Training</a></li>
+                <li><a href="project.html">Project Training</a></li>
+                <li><a href="syllabus.html">Syllabus Training</a></li>
+                <li><a href="winter.html">Winter Training</a></li>
+                <li><a href="appreticeship.html">Appreticeship Traning</a></li>
+                <li><a href="faculty.html">Faculty Traning</a></li>
+                <li><a href="quicklinks.html">QucikLinks</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link link scrollto" href="faqs.html">FAQ'S</a></li>
+            <li><a class="nav-link link scrollto" href="contactp.html">Contact</a></li>
+            <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+  
+      </div>
+    </header>
+    <!-- End Header -->
+    <section>
+    <div class="container">
+        <div style="height:150px; width:100%; background-color:skyblue; text-align:center; line-height:150px; font-size:40px; margin-top:-40px;">
+        <h1><u>##Digital Marketing##</u></h1>      
+    </div>
+     <div class="pic">
+        <img src="https://images.unsplash.com/photo-1557838923-2985c318be48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80" style="height:25rem; width:40rem; margin-top:15px; margin-left:150px; border-radius: 50px;">
+        <h1 style="margin-left:250px; font-size: 50px; color:red;">What Can We Do</h1>
+        <p style="height:255px; width:900px; margin-left:100px; border:5px; font-size: medium; letter-spacing:2px;"><b>Digital marketing encompasses all marketing efforts that use an electronic device or the internet. Businesses leverage digital channels such as search engines, social media, email, and their websites to connect with current and prospective customers.
+
+            Marketing has always been about connecting with your audience in the right place and at the right time. Today, that means you need to meet them where they are already spending time: on the internet.
+            
+            Digital marketing is defined by the use of numerous digital tactics and channels to connect with customers where they spend much of their time: online. From the website itself to a business's online branding assets -- digital advertising, email marketing, online brochures, and beyond -- there's a spectrum of tactics that fall under the umbrella of "digital marketing."</b></p>
+     </div>
+     <ul type="circle">
+     <div style="margin-left:1000px; margin-top:-700px;">
+       <a href="software.html"><h3>Software Development</h3></a>
+       <a href="website.html"><h3>Website Development</h3></a>
+       <a href="mobile.html"><h3>Mobile Application Development</h3></a>
+       <a href="digital.html"><h3>Digital Marketing</h3></a>
+       <a href="graphics.html"><h3>Graphichs Designing</h3></a>
+       <a href="domainho.html"><h3>Domain & Hosting</h3></a>
+       <a href="erpandcrm.html"><h3>ERP & CRM Development</h3></a>
+       <a href="maintenence.html"><h3>Maintenance Services</h3></a>
+     </div>
+    </ul>
+    <ul type="circle">
+        <div style="margin-left:1100px; margin-top:80px;">
+          <h1 style="color:red;" >The Mobile Application development hierarchy is as follows:</h1>
+          <h3>* Front Ebd Development</h3>
+          <h3>* Backend server and Service</h3>
+          <h3>* Security Add-on Layers</h3>
+        <h3>* Mobile Application Testing</h3>
+        </div>
+       </ul>
+       <h1 style="text-align:center; color:black; font-size:50px; border:5px ridge;"><big><b>
+        Features That We Provide In Digital Marketing</b></big></h1>
+       <section>
+        
+        <p style="border:5px dotted black; height: 100px; width:35rem; margin-left:10rem; background-color: white; letter-spacing:2px; border-radius: 10px;"><b><big><big style="color:red;"><u>Facebook Marketing *</u></big></big></b>Facebook marketing is a platform that offers a variety of highly targeted paid advertisements and organic posts, allowing brands to put their products and services in front of the massive audience.</p>
+        
+        <div class="box">
+          <p style="border:3px solid black; height: 115px; width:35rem; margin-left:50rem; background-color:fuchsia;  border-radius: 10px;  margin-top:-130px; letter-spacing:2px;"><b><big><big style="color:red;"><u>Linkedin Marketing *</u></big></big></b>LinkedIn marketing is the process of using LinkedIn to make connections, generate leads, improve brand awareness, foster business relationships and partnerships, share content and drive traffic to your website</p>
+          </div>
+          <div class="box">
+            <p style="border:5px dotted black; height: 100px; width:35rem; margin-left:10rem; background-color:darkmagenta; border-radius: 10px; letter-spacing:2px;"><b><big><big style="color:red;"><u>Twitter Marketing *</u></big></big></b>A Twitter marketing strategy is a plan centered around creating, publishing, and distributing content for your buyer personas, audience, and followers through the social media platform.</p>
+            </div>
+            <div class="box">
+              <p style="border:3px solid black; height: 100px; width:35rem; margin-left:50rem; background-color:hotpink; border-radius: 10px; margin-top:-130px; letter-spacing:2px;"><b><big><big style="color:red;"><u>Email Marketing *</u></big></big></b>
+Email marketing is the act of sending a commercial message, typically to a group of people, using email. In its broadest sense, every email sent to a potential or current customer could be considered email marketing.
+              </p>
+              </div>
+              <div class="box">
+                <p style="border:5px dotted black; height: 100px; width:35rem; margin-left:10rem; background-color: greenyellow;  border-radius: 10px; letter-spacing:2px;"><b><big><big style="color:red;"><u>Bulk *</u></big></big></b>
+                    Bulk messaging is the dissemination of large numbers of SMS messages for delivery to mobile phone terminals. It is used by media companies, enterprises, banks and consumer brands for a variety of purposes including entertainment, enterprise and mobile marketing.</p>
+                </div>
+                <div class="box">
+                  <p style="border:3px solid black; height: 100px; width:35rem; margin-left:50rem; background-color: violet; margin-top:-130px; border-radius: 10px; letter-spacing:2px;"><b><big><big style="color:red;"><u>
+                    Google Adwards *</u></big></big></b>
+                    Google Ads is an online advertising platform developed by Google, where advertisers pay to display brief advertisements, service offerings, product listings, video content, and generate mobile application installs within the Google ad network to web users.</p>
+                  </div>
+                  <div class="box">
+                    <p style="border:5px dotted black; height: 100px; width:35rem; margin-left:10rem; background-color: antiquewhite; border-radius: 10px; letter-spacing:2px;"><b><big><big style="color:red;"><u>Content Marketing *</u></big></big></b>
+                        Content marketing is a form of marketing focused on creating, publishing, and distributing content for a targeted audience online.</p>
+                    </div>
+                    <div class="box">
+                      <p style="border:3px solid black; height: 100px; width:35rem; margin-left:50rem; background-color:skyblue; margin-top:-130px; border-radius: 10px; letter-spacing:2px;"><b><big><big style="color:red;"><u>Pay per click *</u></big></big></b>
+                        Pay-per-click is an internet advertising model used to drive traffic to websites, in which an advertiser pays a publisher when the ad is clicked.
+                      </p>
+                      </div>
+                      <div class="box">
+                        <p style="border:5px dotted black; height: 120px; width:35rem; margin-left:10rem; background-color: cyan; border-radius: 10px; letter-spacing:2px;"><b><big><big style="color:red;"><u>On Page SEO *</u></big></big></b>
+                            
+On-page SEO is the practice of optimizing individual web pages in order to rank higher and earn more relevant traffic in search engines. On-page refers to both the content and HTML source code of a page that can be optimized.</p>
+                        </div>
+                        <div class="box">
+                          <p style="border:3px solid black; height: 100px; width:35rem; margin-left:50rem; background-color: aqua; border-radius: 10px; margin-top:-150px; letter-spacing:2px;"><b><big><big style="color:red;"><u>Off Page SEO *</u></big></big></b>
+                            Off-Page SEO” refers to all of the activities that you and others do away from your website to raise the ranking of a page with search engines. Though many people associate off-page SEO with link building, it goes beyond that.</p>
+                          </div>
+                          <div class="box">
+                            <p style="border:5px dotted black; height: 100px; width:35rem; margin-left:10rem; background-color: lime; border-radius: 10px; letter-spacing:2px;"><b><big><big style="color:red;"><u>Keywords Searching  *</u></big></big></b>
+                                Keyword research is a practice search engine optimization professionals use to find and research search terms that users enter into search engines when looking for products, services or general information.</p>
+                            </div>
+                            <div class="box">
+                              <p style="border:4px solid black; height: 120px; width:35rem; margin-left:50rem; background-color: blue; border-radius: 10px; margin-top:-130px; letter-spacing:2px;"><b><big><big style="color:red;"><u>Website Ranking Updation on Google *</u></big></big></b>
+                                By updating old content, you can get Google to crawl your site more frequently without needing to publish more often. The more Google crawls your site, the more likely your most recent information will show up in search results after publishing.</p>
+                              </div>
+                                  <div class="d">
+<div style="height:15rem; width:100%; background-color:#47b2e4;">
+  <h1 style="text-align: center; font-size: 40px; line-height:100px;"><b style="color:black;">We Help Organisations to Manage Changes With DigiCoders Digital Marketing Services</b></h1>
+</div>
+</div>
+<div class="h">
+  <div style="height:32rem; width:100%; background-color:black; padding:0px;">
+    <p style="height:15rem; width:30%; text-align: center; margin-left: 50px; padding: 0px; margin:0px;"><big style="color:white;"><b>22-23, Behind State Bank of India Babuganj Branch, Near IT Chauraha, Lucknow, UP, India, 226007
+      info@digicoders.in</b></big></p>
+     <p style="margin-top:-8rem;"><a href="tel:0522-4235604"><h3 style="margin-left:150px;">+91-0522-4235604</h3></a></p>
+     <p style="margin-top:3rem;"><a href="tel:0522-4235604"><h3 style="margin-left:150px;">+91-9198483820</h3></a></p>
+     <p style="margin-top:3rem;"><a href="tel:0522-4235604"><h3 style="margin-left:150px;">+91-9198483820</h3></a></p>
+     <p style="margin-top:2rem;"><a href="www.digicoders.in"><h3 style="margin-left:150px;">www.digicoders.in</h3></a></p>
+  </div>
+  </div>
+  </section>
+      </div>
+      <div class="anu">
+        <div style="height:25rem; width:20rem; background-color:black; margin-left:500px; margin-top:-400px;">
+        </div>
+        <h1 style="text-align:center; margin-top:-500px; margin-left:-180px; line-height:80px; color:white;">IT Services*</h1>
+        <div style="text-align: center; margin-left:-150px; color:red;">
+        <a href="software.html"><h3>*Software Development</h3></a>
+        <a href="website.html"><h3>*Website Development</h3></a>
+        <a href="mobile.html"><h3>*Mobile App Development</h3></a>
+        <a href="digital.html"><h3>*Digital Marketing</h3></a>
+        <a href="graphics.html"><h3>*Graphichs  Designing</h3></a>
+        <a href="domainho.html"><h3>*Domain Hosting</h3></a>
+        </div>
+        <div style="height:25rem; width:20rem; background-color:black; margin-left:800px; margin-top:-342px;">
+        </div>
+        <h1 style="text-align:center; margin-top:-400px; margin-left:400px; line-height:80px; color:white;">Quick Links*</h1>
+        <div style="text-align: center; margin-left:400px;">
+        <a href="#"><h3>*Pay Now</h3></a>
+        <a href="#"><h3>*Our Project</h3></a>
+        <a href="#"><h3>*Gallary</h3></a>
+        <a href="#"><h3>*Term & Condition</h3></a>
+        <a href="#"><h3>*Term & Payment</h3></a>
+        <a href="#"><h3>*Refund & Cancellation</h3></a>
+        </div>
+        <div style="height:25rem; width:20rem; background-color:black; margin-left:1100px; margin-top:-342px;">
+        </div>
+        <h1 style="text-align:center; margin-top:-400px; margin-left:1000px; line-height:80px; color:white;">Support*</h1>
+        <div style="text-align: center; margin-left:1000px;">
+        <a href="#"><h3>*Request a Proposal</h3></a>
+        <a href="#"><h3>*Talk & Expert</h3></a>
+        <a href="#"><h3>*Help & FAQ'S</h3></a>
+        <a href="contactp.html"><h3>*Contact Us</h3></a>
+        <a href="#"><h3>*Pricing Package</h3></a>
+        <a href="#"><h3>*Blogs</h3></a>
+        <a href="#"><h3>*Digicoders in News</h3></a>
+        </div>
+        <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- Add font awesome icons -->
+  <a href="#" class="fa fa-facebook" style="margin-left:150px; margin-top:50px; font-size:30px;"></a>
+  <a href="#" class="fa fa-twitter" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+  <a href="#" class="fa fa-instagram" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+  <a href="#" class="fa fa-linkedin" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+  <a href="#" class="fa fa-youtube" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+  <a href="#" class="fa fa-rss" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+  <a href="#" class="fa fa-google" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+  <a href="#" class="fa fa-snapchat" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+        </div>
+</section>
+<h1 style="text-align: right; font-size: 20px; color:white;">© 2019 - 2023 to DigiCoders Technologies (P) Ltd. All Rights Reserved</h1>
+</body>
+</html>

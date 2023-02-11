@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Company In Lucknow</title>
+     <!-- <title link rel="logo" href="assets/img/logo.jpg"</title> -->
+        <link rel="icon" href="logo.jpg">
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="assets/js/main.js"></script>
+    <style>
+        /*--------------------------------------------------------------
+# Navigation Menu(Ankit kushwaha)
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #47b2e4;
+}
+
+.navbar .getstarted,
+.navbar .getstarted:focus {
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  border: 2px solid #47b2e4;
+  font-weight: 600;
+}
+
+.navbar .getstarted:hover,
+.navbar .getstarted:focus:hover {
+  color: #fff;
+  background: #31a9e1;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 500;
+  color: #0c3c53;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+  color: #47b2e4;
+}
+
+.navbar .dropdown:hover>ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .navbar .dropdown .dropdown:hover>ul {
+    left: -100%;
+  }
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+.mobile-nav-toggle.bi-x {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(40, 58, 90, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #37517e;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a {
+  color: #47b2e4;
+}
+
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+  color: #37517e;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover>a {
+  color: #47b2e4;
+}
+
+.navbar-mobile .dropdown>.dropdown-active {
+  display: block;
+}
+
+        /*--------------------------------------------------------------
+# Frequently Asked Questions(Ankit kushwaha)
+--------------------------------------------------------------*/
+.faq .faq-list {
+  padding: 0 100px;
+}
+
+.faq .faq-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .faq-list li+li {
+  margin-top: 15px;
+}
+
+.faq .faq-list li {
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+}
+
+.faq .faq-list a {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+.faq .faq-list .icon-help {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  left: 20px;
+  color: #47b2e4;
+}
+
+.faq .faq-list .icon-show,
+.faq .faq-list .icon-close {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+
+.faq .faq-list .icon-show {
+  display: none;
+}
+
+.faq .faq-list a.collapsed {
+  color: #37517e;
+  transition: 0.3s;
+}
+
+.faq .faq-list a.collapsed:hover {
+  color: #47b2e4;
+}
+
+.faq .faq-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.faq .faq-list a.collapsed .icon-close {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .faq .faq-list {
+    padding: 0;
+  }
+}
+body{
+    background:black;
+    font-family: sans-serif;
+}
+
+    </style>
+</head>
+<body>
+     <!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            call: "9140967607", // Call phone number
+            whatsapp: "6394296293", // WhatsApp number
+            call_to_action: "Please Call ", // Call to action
+            button_color: "#A8CE50", // Color of button
+            position: "left", // Position may be 'right' or 'left'
+            order: "whatsapp,call", // Order of buttons
+        };
+        var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+  </script>
+  <!-- /GetButton.io widget -->
+  
+  
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6301df6637898912e9643cc8/1gavl1bal';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+  
+    
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+      <div class="container d-flex align-items-center">
+  
+        <!-- <h1 class="logo me-auto"><a href="#">Digi<span class="text-primary">{</span><span class="text-light">Coders</span><span class="text-primary">}</span></a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+  
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link link scrollto active" href="our website.html">Home</a></li>
+            <li class="dropdown"><a href="about.html"><span>About</span><i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="ourexpert.html">Our Expert</a></li>
+                <li><a href="mou.html">MOU with College</a></li>
+                <li><a href="certificate.html">Certificate and Achievemets</a></li>
+                <li><a href="appreciation.html">Appreciation Letter</a></li>
+              </ul>
+              </li>
+            <li class="dropdown"><a href="#"><span>Services</span><i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="software.html">Software Development</a></li>
+              <li><a href="website.html">Website Development</a></li>
+              <li><a href="mobile.html">Mobile App Development</a></li>
+              <li><a href="digital.html">Digital Marketing</a></li>
+              <li><a href="graphics.html">Graphichs designing</a></li>
+              <li><a href="domainho.html">Domain & Hosting</a></li>
+              <li><a href="erpandcrm.html">ERP & CRM Development</a></li>
+              <li><a href="maintenence.html">Maintenance services</a></li>
+            </ul>
+            </li>
+            <li><a class="nav-link link scrollto" href="registration.html">Registration</a></li>
+            <li class="dropdown"><a href=""><span>Gallary</span><i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="photos.html">Photos Gallary</a></li>
+              <li><a href="video.html">Videos Gallary</a></li>
+            </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Training</span><i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="vocational.html">Vocational Training</a></li>
+                <li><a href="summer.html">Summer Training</a></li>
+                <li><a href="internship.html">Internship Training</a></li>
+                <li><a href="project.html">Project Training</a></li>
+                <li><a href="syllabus.html">Syllabus Training</a></li>
+                <li><a href="winter.html">Winter Training</a></li>
+                <li><a href="appreticeship.html">Appreticeship Traning</a></li>
+                <li><a href="faculty.html">Faculty Traning</a></li>
+                <li><a href="quicklinks.html">QucikLinks</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link link scrollto" href="faqs.html">FAQ'S</a></li>
+            <li><a class="nav-link link scrollto" href="contactp.html">Contact</a></li>
+            <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+  
+      </div>
+    </header>
+    <!-- End Header -->
+    <div class="faqs" style="height:200px; width:auto; background:aqua; text-align:center; color:black; line-height: 200px; font-size:35px;">
+<h1><u>##Frequently Asked Questions##</u></h1>
+    </div>
+   <!-- ======= Frequently Asked Questions Section ======= -->
+   <section id="faq" class="faq section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <!-- <div class="section-title">
+        
+      </div> -->
+
+      <div class="faq-list">
+        <ul>
+          <li data-aos="fade-up" data-aos-delay="100">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1"><b>What are software outsourcing services?</b><i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+              <p>
+              <b>Software outsourcing is a remote service that is provided by software development companies. The service can consist of services ranging from full software or mobile application development, design development, testing, to project launch and project support. 
+
+So, in the simplest words, software outsourcing services is all about hiring a developer or a development team that is external to your company staff to help create some digital product for your business.</b>
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="200">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed"><b>What software development methodologies do we use?</b><i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+              <b>All our development and software testing processes are running while adhering to highly effective methodologies including Agile, Scrum, DevOps, and other methodologies to meet the highest KPIs for your project.
+
+We document all the operations required to handle the development of your digital product and measure them according to the following key parameters:
+
+Activity description;
+Milestone documentation;
+Project scope statement;
+Organizational assets.</b>
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="300">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed"><b>What control do you have over project development?</b><i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+              <b>You would retain full control over all stages in the development life cycle of your project. You can monitor the process through regular calls and meetings, track the status and exercise of every task. 
+
+Within a set of meetings scheduled throughout the whole development cycle, we would inform you of the progress in regard to the project roadmap. We divide our entire work into sprints for ease of tracking and so you can make changes in the scope at any stage.</b>
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="400">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed"><b>How long does it take to start my product development?</b><i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+              <b> To start with, we review project requirements from the client, we get them analyzed and then inform you of the estimation results. 
+                Once you are fine with the cost and time, the next step would be to create a project report document and a proposal. Our business analyst will prepare this and then we send you the same for review. Once everything has been finalized we would then take the project to the next stage, which is the development stage.</b>
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="500">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed"><b>Do you get any product support?</b><i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+              <b>In the initial stages of software development, we reserve up to 40 hours per month for your product support. Even after launching your product our QA engineer provides manual and automated testing of your and reports your and that our developers fix in an immediate way.
+
+After 3 months of project development, the client is moved to the service desk. Here you have access to key management personnel to escalate any issue you probably might get within your product.
+
+Depending on the priority of the issue, your request can be resolved within 24 hours in case of high urgency so as to match its priority.</b>
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="500">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed"><b>Should I create a mobile or a web app?</b><i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+              </b>Both have their benefits and flaws. Mobile apps are surely more expensive but can provide you with many more data collecting, monetisation capabilities than web applications. Progressive Web Apps are a good compromise between a mobile and web app — you can  learn more about PWA on our blog. But remember that sooner or later you may need both mobile and web app and when that moment comes we are here for you :)</b>
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="500">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed"><b>Are you able to double the size of the team involved in the project if the need arises?</b>
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+              <b>Whether you want to expand your product or create a completely new one simultaneously, and then again focus only on one of your projects, we are always ready to adapt to your requirements. If the work is less intense team size can be reduced. When improvements need to be implemented fast, we can quickly assign additional team members to speed up each phase of the development process.</b>
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="500">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed"><b>I want to be involved in the app development process, do you have a problem with that?</b><i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+              <b>Not at all! We want you to be sure you'll receive the product you desire. From the planning stage to each finished version, we invite you to evaluate and improve our work. Our philosophy is to work with the client, not merely finish given tasks. We are always ready to listen and communicate.</b>
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="500">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed"><b>Why should I choose you and not hire my own software development team?</b><i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+              <b>Hiring your own software developers can be a really smart choice, however, recruitment process is time-consuming and the costs of keeping an in-house programming team are very high. You'll probably need to employ your own  software engineers sooner or later but hiring us can help you save a lot of money and time (which is basically the same in a business project). Read our blog entry on that topic to learn more.</b>
+              </p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Frequently Asked Questions Section --> 
+  <div class="footer" style="height:500px; width:100%; background-color:black;">
+    <div style="height:500px; width:20%; background-color:black; margin-left:20px;">
+      <p style="color:white; font-size:25px;">
+        22-23, Behind State Bank of India Babuganj Branch, Near IT Chauraha, Lucknow, UP, India, 226007
+    info@digicoders.in 
+    <p><a href="info@digicoders.in" style="font-size:25px;">Company</a></p>
+    <p><a href="our website.html" style="font-size:25px;">Home</a></p>
+    <p><a href="about.html" style="font-size:25px;">About</a></p>
+    <p><a href="faqs.html" style="font-size:25px;">Faq's</a></p>
+    <p><a href="www.digicoders.in" style="font-size:25px;">www.digicoders.in</a></p>
+    <div class="gfu">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Add font awesome icons -->
+      <a href="https://www.facebook.com/programmerkashyap" class="fa fa-facebook" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+      <a href="https://twitter.com/pro_kashyap" class="fa fa-twitter" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+      <a href="https://www.instagram.com/programmerkashyap/" class="fa fa-instagram" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+      <a href="https://www.linkedin.com/in/programmerkashyap/" class="fa fa-linkedin" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+      <a href="https://youtu.be/lHeA6FNo7Y4" class="fa fa-youtube" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+      <a href="#" class="fa fa-rss" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+      <a href="#" class="fa fa-google" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+      </div>
+    
+      </p>
+        </div>
+        <div style="height:500px; width:20%; background-color:black; margin-left:600px; margin-top:-520px;">
+          <p style="color:white; font-size:25px;">Our Services
+        <p><a href="software.html" style="font-size:25px;">Software Development</a></p></br>
+        <p><a href="mobile.html" style="font-size:25px;">Mobile App Development</a></p></br>
+        <p><a href="website.html" style="font-size:25px;">Website Development</a></p></br>
+        <p><a href="digital.html" style="font-size:25px;">Digital Marketing</a></p></br>
+        <p><a href="graphics.html" style="font-size:25px;">Graphichs Designing</a></p></br>
+        <p><a href="domainho.html" style="font-size:25px;"></a>Domains & Hosting</a></p>
+          </p>
+            </div>
+            <div style="height:500px; width:20%; background-color:black; margin-left:350px; margin-top:-520px;">
+              <p style="color:white; font-size:25px;">Get In Touch
+            <p><a href="" style="font-size:25px;">Digicoders News</a></p></br>
+            <p><a href="" style="font-size:25px;">Veryfi Certificate</a></p></br>
+            <p><a href="" style="font-size:25px;">Final year Project</a></p></br>
+            <p><a href="" style="font-size:25px;">Student Reviews</a></p></br>
+              </p>
+                </div>
+                <div style="height:500px; width:20%; background-color:black; margin-left:900px; margin-top:-530px;">
+                  <p style="color:white; font-size:25px;">Training
+                <p><a href="appreticeship.html" style="font-size:25px;">Appreticeship Training</a></p></br>
+                <p><a href="industrial.html" style="font-size:25px;">Industrial Training</a></p></br>
+                <p><a href="internship.html" style="font-size:25px;">Internship Training</a></p></br>
+                <p><a href="vocational.html" style="font-size:25px;">Vocational Training</a></p></br>
+                <p><a href="faculty.html" style="font-size:25px;">Faculty Training</a></p></br>
+                  </p>
+                    </div>
+                    <div style="height:500px; width:20%; background-color:black; margin-left:1170px; margin-top:-530px;">
+                      <a href=""><img src="https://digicoders.in/public/assets/images/google-play-logo-featured.png" style="height:100px; width:200px; margin-top:20px; margin-left:60px;"></a>
+                      <a href=""><img src="https://cashfreelogo.cashfree.com/cashfree_certified_partner.png" style="height:100px; width:200px; margin-top:25px; margin-left:60px;"></a>
+                      <a href=""><img src="https://digicoders.in/public/assets/images/GemGovLogo.png" style="height:100px; width:200px; margin-top:25px; margin-left:60px;"></a>
+                      <a href=""><img src="https://digicoders.in/public/assets/images/StartupIndiaLogo.jpg" style="height:100px; width:200px; margin-top:25px; margin-left:60px;"></a>
+                    </div>
+</body>
+</html>

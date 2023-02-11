@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Company in Lucknow</title>
+    <!-- <title link rel="logo" href="assets/img/logo.jpg"</title> -->
+        <link rel="icon" href="logo.jpg">
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="assets/js/main.js"></script>
+        <style>
+            /**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #47b2e4;
+}
+
+.navbar .getstarted,
+.navbar .getstarted:focus {
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  border: 2px solid #47b2e4;
+  font-weight: 600;
+}
+
+.navbar .getstarted:hover,
+.navbar .getstarted:focus:hover {
+  color: #fff;
+  background: #31a9e1;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 500;
+  color: #0c3c53;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+  color: #47b2e4;
+}
+
+.navbar .dropdown:hover>ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .navbar .dropdown .dropdown:hover>ul {
+    left: -100%;
+  }
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+.mobile-nav-toggle.bi-x {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(40, 58, 90, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #37517e;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a {
+  color: #47b2e4;
+}
+
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+  color: #37517e;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover>a {
+  color: #47b2e4;
+}
+
+.navbar-mobile .dropdown>.dropdown-active {
+  display: block;
+}
+body
+{
+    background-color:black;
+    font-family: sans-serif;
+}
+
+        </style>
+</head>
+<body>
+    <!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            call: "9140967607", // Call phone number
+            whatsapp: "6394296293", // WhatsApp number
+            call_to_action: "Please Call ", // Call to action
+            button_color: "#A8CE50", // Color of button
+            position: "left", // Position may be 'right' or 'left'
+            order: "whatsapp,call", // Order of buttons
+        };
+        var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+  </script>
+  <!-- /GetButton.io widget -->
+  
+  
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6301df6637898912e9643cc8/1gavl1bal';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+      <div class="container d-flex align-items-center">
+  
+        <!-- <h1 class="logo me-auto"><a href="#">Digi<span class="text-primary">{</span><span class="text-light">Coders</span><span class="text-primary">}</span></a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+  
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link link scrollto active" href="our website.html">Home</a></li>
+            <li class="dropdown"><a href="about.html"><span>About</span><i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="ourexpert.html">Our Expert</a></li>
+                <li><a href="mou.html">MOU with College</a></li>
+                <li><a href="certificate.html">Certificate and Achievemets</a></li>
+                <li><a href="appreciation.html">Appreciation Letter</a></li>
+              </ul>
+              </li>
+            <li class="dropdown"><a href="#"><span>Services</span><i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="software.html">Software Development</a></li>
+              <li><a href="website.html">Website Development</a></li>
+              <li><a href="mobile.html">Mobile App Development</a></li>
+              <li><a href="digital.html">Digital Marketing</a></li>
+              <li><a href="graphics.html">Graphichs designing</a></li>
+              <li><a href="domainho.html">Domain & Hosting</a></li>
+              <li><a href="erpandcrm.html">ERP & CRM Development</a></li>
+              <li><a href="maintenence.html">Maintenance services</a></li>
+            </ul>
+            </li>
+            <li><a class="nav-link link scrollto" href="registration.html">Registration</a></li>
+            <li class="dropdown"><a href="#"><span>Gallary</span><i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="photos.html">Photos Gallary</a></li>
+              <li><a href="video.html">Videos Gallary</a></li>
+            </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Training</span><i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="vocational.html">Vocational Training</a></li>
+                <li><a href="summer.html">Summer Training</a></li>
+                <li><a href="internship.html">Internship Training</a></li>
+                <li><a href="project.html">Project Training</a></li>
+                <li><a href="syllabus.html">Syllabus Training</a></li>
+                <li><a href="winter.html">Winter Training</a></li>
+                <li><a href="appreticeship.html">Appreticeship Traning</a></li>
+                <li><a href="faculty.html">Faculty Traning</a></li>
+                <li><a href="quicklinks.html">QucikLinks</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link link scrollto" href="faqs.html">FAQ'S</a></li>
+            <li><a class="nav-link link scrollto" href="contactp.html">Contact</a></li>
+            <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+    <div class="container">
+        <div style="height:250px; width:100%; background-color:white; text-align:center; line-height:250px; font-size:30px; margin-top:10px;">
+        <h1><marquee>Faculty Traning Program Lucknow</marquee></h1>      
+    </div>
+    <h1 style="text-align:center; color:aqua;"><big>Anout our Training Program in Lucknow</big></h1>     
+    <p style="color:white; text-align:center; font-size:25px;">Appreticeship Training program in lucknow is specially designed only for B.tech(CS/IT),BCA,MCA,M.tech Final Year Engineering Students,who wants to explore the IT Industry and wants to start their</br>career as software.Webiste or Mobile Application Developer.This is a Six Months training program held in Lucknow.</p> 
+    <h1 style="color:wheat; margin-left:18%; font-size:30px;">Course Description</h1>
+    <p style="color:white; margin-left:50px; letter-spacing:1px; font-size:20px;">This Training is Important as it ensure that equal amount of time is given in learning</br>The Therotical conception and matching it with the Industry requirements.</br>In terms of Practical Skills.It fosters n indivisual Training to face the Challenge of the</br>Corporate The World Vocatioanl Training imparts necessary skills its Participatent</br> which are needed to survive in this compatitive Industry its also makes ensure that students gain skill</br>and competencies which are reqired to servive in the industry</br>Students also gets chance to work on the live project depending upon the technology they select.</p>
+    <h1 style="text-align:right; color:aqua; font-size:35px; margin-top:-15rem">Fee Struture</h1>
+    <pre><h1 style="text-align:right; letter-spacing:5px; color:white;">PHP        18000</h1></pre>
+    <pre><h1 style="text-align:right; letter-spacing:5px; color:white;">PYTHON     18000</h1></pre>
+    <pre><h1 style="text-align:right; letter-spacing:5px; color:white;">JAVA       18000</h1></pre>
+    <pre><h1 style="text-align:right; letter-spacing:5px; color:white;">ANDROID    18000</h1></pre>
+    <pre><h1 style="text-align:right; letter-spacing:5px; color:white;">ASP.NET    24000</h1></pre>
+    <pre><h1 style="text-align:right; letter-spacing:5px; color:white;">FLUTTER    24000</h1></pre>
+    <pre><h1 style="text-align:right; letter-spacing:5px; color:white;">MERN STACK 24000</h1></pre>
+    <h1 style="color:wheat; text-align:left; margin-top:-110px; margin-left:20rem">Certification</h1>
+    <p style="color:green; text-align:left; font-size:30px;">After successfully complete training we have provide the certificate to students.</p>
+    <h1 style="color:wheat; text-align:center; margin-left:-45rem;">Overview</h1>
+    <pre><h1 style="text-align:left; letter-spacing:5px; color:white;">Lecture        30</h1></pre>
+    <pre><h1 style="text-align:left; letter-spacing:5px; color:white;">Live Project   600+</h1></pre>
+    <pre><h1 style="text-align:left; letter-spacing:5px; color:white;">Skill Level    Final Year</h1></pre>
+    <pre><h1 style="text-align:left; letter-spacing:5px; color:white;">Duration       30Days</h1></pre>
+    <pre><h1 style="text-align:left; letter-spacing:5px; color:white;">Language       English Hindi</h1></pre>
+    <pre><h1 style="text-align:left; letter-spacing:5px; color:white;">Student        6000+</h1></pre>
+    <pre><h1 style="text-align:left; letter-spacing:5px; color:white;">Assessments    Yes</h1></pre>
+    <h1 style="text-align:right; margin-right:80px; color:wheat; margin-top:-24rem;">Learning Outcomes</h1>
+    <h1 style="text-align:right; font-size: 20px; color:white;">* Learn Software Testing and Automation basics from </br>a professional trainers from your own desk</h1>
+    <h1 style="text-align:right; font-size:20px;  color:white;">* Over 30 Lecture of Content!</h1>
+    <h1 style="text-align:right; font-size:20px; color:white;">* Live Project end to end Software Testing Training Included</h1>
+    <h1 style="text-align:right; font-size:20px; color:white;">* Information Packed practical Training starting from basics to Advanced testing techniques</h1>
+    <h1 style="text-align:right; font-size:20px; color:white;">* Practical Assignment at the end of every session.</h1>
+    <h1 style="text-align:right; font-size:20px; color:white;">* Practical Learning experience with Live Project work.</h1>
+    <h1 style="text-align:right; font-size:20px; color:white;">* Course Content designed by considering current software testing technology and the job Market.</h1>
+    <h1 style="text-align:right; font-size:20px; color:white;">* Best Suitable for Beginners to Advanced level users and who learn faster when demonstrated. </h1> 
+    </div>
+    <div class="img" style="height:20rem; width:100%; background:white;">
+<img src="a.jpg" style="height:10rem; width:10rem;">
+<img src="d.jpeg" style="height:10rem; width:10rem;">
+<img src="a.jpg" style="height:10rem; width:10rem;">
+<img src="d.jpeg" style="height:10rem; width:10rem;">
+<img src="a.jpg" style="height:10rem; width:10rem;">
+<img src="d.jpeg" style="height:10rem; width:10rem;">
+<img src="a.jpg" style="height:10rem; width:10rem;">
+<img src="d.jpeg" style="height:10rem; width:10rem;">
+<img src="a.jpg" style="height:10rem; width:10rem;">
+<img src="d.jpeg" style="height:10rem; width:10rem;">
+<img src="a.jpg" style="height:10rem; width:10rem;">
+<img src="d.jpeg" style="height:10rem; width:10rem;">
+<img src="d.jpeg" style="height:10rem; width:10rem;">
+<img src="a.jpg" style="height:10rem; width:10rem;">
+<img src="d.jpeg" style="height:10rem; width:10rem;">
+<img src="d.jpeg" style="height:10rem; width:10rem;">
+<img src="a.jpg" style="height:10rem; width:10rem;">
+<img src="d.jpeg" style="height:10rem; width:10rem;">
+</div>
+
+<div class="footer" style="height:500px; width:100%; background-color:black;">
+<div style="height:500px; width:20%; background-color:black; margin-left:20px;">
+  <p style="color:white; font-size:25px;">
+    22-23, Behind State Bank of India Babuganj Branch, Near IT Chauraha, Lucknow, UP, India, 226007
+info@digicoders.in 
+<p><a href="info@digicoders.in" style="font-size:25px;">Company</a></p>
+<p><a href="our website.html" style="font-size:25px;">Home</a></p>
+<p><a href="about.html" style="font-size:25px;">About</a></p>
+<p><a href="faqs.html" style="font-size:25px;">Faq's</a></p>
+<p><a href="www.digicoders.in" style="font-size:25px;">www.digicoders.in</a></p>
+<div class="gfu">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Add font awesome icons -->
+  <a href="https://www.facebook.com/programmerkashyap" class="fa fa-facebook" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+  <a href="https://twitter.com/pro_kashyap" class="fa fa-twitter" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+  <a href="https://www.instagram.com/programmerkashyap/" class="fa fa-instagram" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+  <a href="https://www.linkedin.com/in/programmerkashyap/" class="fa fa-linkedin" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+  <a href="https://youtu.be/lHeA6FNo7Y4" class="fa fa-youtube" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+  <a href="#" class="fa fa-rss" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+  <a href="#" class="fa fa-google" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+  </div>
+  </p>
+    </div>
+    <div style="height:500px; width:20%; background-color:black; margin-left:600px; margin-top:-520px;">
+      <p style="color:white; font-size:25px;">Our Services
+    <p><a href="software.html" style="font-size:25px;">Software Development</a></p></br>
+    <p><a href="mobile.html" style="font-size:25px;">Mobile App Development</a></p></br>
+    <p><a href="website.html" style="font-size:25px;">Website Development</a></p></br>
+    <p><a href="digital.html" style="font-size:25px;">Digital Marketing</a></p></br>
+    <p><a href="graphics.html" style="font-size:25px;">Graphichs Designing</a></p></br>
+    <p><a href="domainho.html" style="font-size:25px;"></a>Domains & Hosting</a></p>
+      </p>
+        </div>
+        <div style="height:500px; width:20%; background-color:black; margin-left:350px; margin-top:-520px;">
+          <p style="color:white; font-size:25px;">Get In Touch
+        <p><a href="" style="font-size:25px;">Digicoders News</a></p></br>
+        <p><a href="" style="font-size:25px;">Veryfi Certificate</a></p></br>
+        <p><a href="" style="font-size:25px;">Final year Project</a></p></br>
+        <p><a href="" style="font-size:25px;">Student Reviews</a></p></br>
+          </p>
+            </div>
+            <div style="height:500px; width:20%; background-color:black; margin-left:900px; margin-top:-530px;">
+              <p style="color:white; font-size:25px;">Training
+            <p><a href="appreticeship.html" style="font-size:25px;">Appreticeship Training</a></p></br>
+            <p><a href="industrial.html" style="font-size:25px;">Industrial Training</a></p></br>
+            <p><a href="internship.html" style="font-size:25px;">Internship Training</a></p></br>
+            <p><a href="vocational.html" style="font-size:25px;">Vocational Training</a></p></br>
+            <p><a href="faculty.html" style="font-size:25px;">Faculty Training</a></p></br>
+              </p>
+                </div>
+                <div style="height:500px; width:20%; background-color:black; margin-left:1170px; margin-top:-530px;">
+                  <a href=""><img src="https://digicoders.in/public/assets/images/google-play-logo-featured.png" style="height:100px; width:200px; margin-top:20px; margin-left:60px;"></a>
+                  <a href=""><img src="https://cashfreelogo.cashfree.com/cashfree_certified_partner.png" style="height:100px; width:200px; margin-top:25px; margin-left:60px;"></a>
+                  <a href=""><img src="https://digicoders.in/public/assets/images/GemGovLogo.png" style="height:100px; width:200px; margin-top:25px; margin-left:60px;"></a>
+                  <a href=""><img src="https://digicoders.in/public/assets/images/StartupIndiaLogo.jpg" style="height:100px; width:200px; margin-top:25px; margin-left:60px;"></a>
+                </div>
+    <body>
+      </html>

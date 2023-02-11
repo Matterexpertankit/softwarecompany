@@ -1,0 +1,512 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Best Software Company in Lucknow</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- <title link rel="logo" href="assets/img/logo.jpg"</title> -->
+    <link rel="icon" href="logo.jpg">
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="assets/js/main.js"></script>
+<style>
+    * {
+  box-sizing: border-box;
+    }
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+  text-align:center;
+}
+.container {
+  border-radius: 5px;
+  background-color:chocolate;
+  padding: 10px;
+}
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width:600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #47b2e4;
+}
+
+.navbar .getstarted,
+.navbar .getstarted:focus {
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  border: 2px solid #47b2e4;
+  font-weight: 600;
+}
+
+.navbar .getstarted:hover,
+.navbar .getstarted:focus:hover {
+  color: #fff;
+  background: #31a9e1;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 500;
+  color: #0c3c53;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+  color: #47b2e4;
+}
+
+.navbar .dropdown:hover>ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .navbar .dropdown .dropdown:hover>ul {
+    left: -100%;
+  }
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+.mobile-nav-toggle.bi-x {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(40, 58, 90, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #37517e;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a {
+  color: #47b2e4;
+}
+
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+  color: #37517e;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover>a {
+  color: #47b2e4;
+}
+
+.navbar-mobile .dropdown>.dropdown-active {
+  display: block;
+}
+
+</style>
+    </head>
+    <body>
+      <!-- GetButton.io widget -->
+<script type="text/javascript">
+  (function () {
+      var options = {
+          call: "9140967607", // Call phone number
+          whatsapp: "6394296293", // WhatsApp number
+          call_to_action: "Please Call ", // Call to action
+          button_color: "#A8CE50", // Color of button
+          position: "left", // Position may be 'right' or 'left'
+          order: "whatsapp,call", // Order of buttons
+      };
+      var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+  })();
+</script>
+<!-- /GetButton.io widget -->
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/6301df6637898912e9643cc8/1gavl1bal';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+        <header id="header" class="fixed-top ">
+            <div class="container d-flex align-items-center">
+        
+               <!-- <h1 class="logo me-auto"><a href="#">Digi<span class="text-primary">{</span><span class="text-light">Coders</span><span class="text-primary">}</span></a></h1>  -->
+              <!-- Uncomment below if you prefer to use an image logo -->
+              <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        
+              <nav id="navbar" class="navbar">
+                <ul>
+                  <li><a class="nav-link link scrollto active" href="our website.html">Home</a></li>
+                  <li class="dropdown"><a href="about.html"><span>About</span><i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                      <li><a href="ourexpert.html">Our Expert</a></li>
+                      <li><a href="mou.html">MOU with College</a></li>
+                      <li><a href="certificate.html">Certificate and Achievemets</a></li>
+                      <li><a href="appreciation.html">Appreciation Letter</a></li>
+                    </ul>
+                    </li>
+                  <li class="dropdown"><a href="#"><span>Services</span><i class="bi bi-chevron-down"></i></a>
+                  <ul>
+                    <li><a href="software.html">Software Development</a></li>
+                    <li><a href="website.html">Website Development</a></li>
+                    <li><a href="mobile.html">Mobile App Development</a></li>
+                    <li><a href="digital.html">Digital Marketing</a></li>
+                    <li><a href="graphics.html">Graphichs designing</a></li>
+                    <li><a href="domainho.html">Domain & Hosting</a></li>
+                    <li><a href="erpandcrm.html">ERP & CRM Development</a></li>
+                    <li><a href="maintenence.html">Maintenance services</a></li>
+                  </ul>
+                  </li>
+                  <li><a class="nav-link link scrollto" href="registration.html">Registration</a></li>
+                  <li class="dropdown"><a href="#"><span>Gallary</span><i class="bi bi-chevron-down"></i></a>
+                  <ul>
+                    <li><a href="photos.html">Photos Gallary</a></li>
+                    <li><a href="video.html">Videos Gallary</a></li>
+                  </ul>
+                  </li>
+                  <li class="dropdown"><a href="#"><span>Training</span><i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                      <li><a href="vocational.html">Vocational Training</a></li>
+                      <li><a href="summer.html">Summer Training</a></li>
+                      <li><a href="internship.html">Internship Training</a></li>
+                      <li><a href="project.html">Project Training</a></li>
+                      <li><a href="syllabus.html">Syllabus Training</a></li>
+                      <li><a href="winter.html">Winter Training</a></li>
+                      <li><a href="appreticeship.html">Appreticeship Traning</a></li>
+                      <li><a href="faculty.html">Faculty Traning</a></li>
+                      <li><a href="quicklinks.html">QucikLinks</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="nav-link link scrollto" href="faqs.html">FAQ'S</a></li>
+                  <li><a class="nav-link link scrollto" href="contactp.html">Contact</a></li>
+                  <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+              </nav><!-- .navbar -->
+        
+            </div>
+          </header>
+<div class="container">
+  <div style="text-align:center">
+    <h1 style="color:wheat"><u>##Contact Us##</u></h1>
+    <h2 style="color:white;">Digicoders Technologies Private limited Lucknow</h2>
+  </div>
+  <div class="row">
+    <div class="column">
+    <img src="https://media.licdn.com/dms/image/C4D22AQH92uKkqHF-Rw/feedshare-shrink_800/0/1666009479101?e=1675296000&v=beta&t=1DXYw-vlc8XP8mPI9yZVQRGbYiuzdQAEQ4O2ZkhEE-g" style="width:100%; border-radius:50%;">
+    </div>
+    <div class="column">
+      <form action="">
+        <label for="firstname"><b>Your first Name</b></label>
+        <input type="text" id="firstname" name="firstname" placeholder="Your first name..">
+        <label for="lastname"><b>Last Name</b></label>
+        <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+        <label for="name"><b>Email</b></label>
+        <input type="text" id="email" name="email" placeholder="Your email..">
+        <label for="number"><b>Number</b></label>
+        <input type="text" id="number" name="number" placeholder="Your number..">
+        <label for="country"><b>Country</b></label>
+        <select id="country" name="country">
+        <option><b>India<b></option>
+        <option><b>Pakistan</b></option>
+        <option value="australia"><b>Australia<b></option>
+        <option value="canada"><b>Canada<b></option>
+        <option value="usa"><b>USA</b></option>
+        </select>
+        <label for="subject"><b>Subject</b></label>
+        <textarea id="subject" name="subject" placeholder="Write something..Here" style="height:170px"></textarea>
+        <input type="submit" value="Submit" style="border-radius:5px;">
+      </form>
+    </div> 
+  </div>
+    <div class="ii" style="height:600px; width:40%; background-color:white; text-align:center;">
+      <h1 style="line-height:100px; font-size:40px;">Contact information</h1>
+<p><big><big><big>Contact*</big></big></big></p>                         
+</p><b><big>22-23, Behind State Bank Of India, Babuganj Branch, Faizabad Road, Nirala Nagar, Lucknow - 226020 (Near It Chauraha)</big></b></p>
+<p><big><big><big>Email*</big></big></big></p>                         
+</p><b><big><big>info@thedegicoders.com</big></big></b></p>
+<Big><p><big><big>Mobile*</big></big></br>
+<a href="tel:8081347355">+91-8081347355</a></p></Big>
+<big><a href="tel:9198483820">+91-9198483820</a></big></br></br>
+<big><a href="tel:8081329320">+91-8081329320</a></big></br></br>
+<big><a href="tel:7525953975">+91-7525953975</a></big></br></br>
+<big><a href="tel:0522-4235604">0522-4235604</a></big></br></br>
+    </div>
+    <div class="hh" style="height:600px; width:60%; background-color:aqua; margin-top:-600px; margin-left:auto;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.029406708247!2d80.936512615044!3d26.870806783145568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd90f852511b%3A0xea3004cdf494ecbb!2z4KSh4KS_4KSc4KS_4KSV4KWL4KSh4KSw4KWN4KS4IOCkn-Clh-CkleCljeCkqOCli-CksuClieCknOClgOCknCDgpKrgpY3gpLDgpL7gpIfgpLXgpYfgpJ8g4KSy4KS_4KSu4KS_4KSf4KWH4KSh!5e0!3m2!1shi!2sin!4v1670794788611!5m2!1shi!2sin" width="100%" height="600px;" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer" style="height:500px; width:100%; background-color:black;">
+      <div style="height:500px; width:20%; background-color:black; margin-left:20px;">
+        <p style="color:white; font-size:25px;">
+          22-23, Behind State Bank of India Babuganj Branch, Near IT Chauraha, Lucknow, UP, India, 226007
+      info@digicoders.in 
+      <p><a href="info@digicoders.in" style="font-size:25px;">Company</a></p>
+      <p><a href="our website.html" style="font-size:25px;">Home</a></p>
+      <p><a href="about.html" style="font-size:25px;">About</a></p>
+      <p><a href="faqs.html" style="font-size:25px;">Faq's</a></p>
+      <p><a href="www.digicoders.in" style="font-size:25px;">www.digicoders.in</a></p>
+      <div class="gfu">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Add font awesome icons -->
+        <a href="https://www.facebook.com/programmerkashyap" class="fa fa-facebook" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+        <a href="https://twitter.com/pro_kashyap" class="fa fa-twitter" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+        <a href="https://www.instagram.com/programmerkashyap/" class="fa fa-instagram" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+        <a href="https://www.linkedin.com/in/programmerkashyap/" class="fa fa-linkedin" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+        <a href="https://youtu.be/lHeA6FNo7Y4" class="fa fa-youtube" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+        <a href="#" class="fa fa-rss" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+        <a href="#" class="fa fa-google" style="margin-left:10px; margin-top:50px; font-size:30px;"></a>
+        </div>
+      
+        </p>
+          </div>
+          <div style="height:500px; width:20%; background-color:black; margin-left:600px; margin-top:-520px;">
+            <p style="color:white; font-size:25px;">Our Services
+          <p><a href="software.html" style="font-size:25px;">Software Development</a></p></br>
+          <p><a href="mobile.html" style="font-size:25px;">Mobile App Development</a></p></br>
+          <p><a href="website.html" style="font-size:25px;">Website Development</a></p></br>
+          <p><a href="digital.html" style="font-size:25px;">Digital Marketing</a></p></br>
+          <p><a href="graphics.html" style="font-size:25px;">Graphichs Designing</a></p></br>
+          <p><a href="domainho.html" style="font-size:25px;"></a>Domains & Hosting</a></p>
+            </p>
+              </div>
+              <div style="height:500px; width:20%; background-color:black; margin-left:350px; margin-top:-520px;">
+                <p style="color:white; font-size:25px;">Get In Touch
+              <p><a href="" style="font-size:25px;">Digicoders News</a></p></br>
+              <p><a href="" style="font-size:25px;">Veryfi Certificate</a></p></br>
+              <p><a href="" style="font-size:25px;">Final year Project</a></p></br>
+              <p><a href="" style="font-size:25px;">Student Reviews</a></p></br>
+                </p>
+                  </div>
+                  <div style="height:500px; width:20%; background-color:black; margin-left:900px; margin-top:-530px;">
+                    <p style="color:white; font-size:25px;">Training
+                  <p><a href="appreticeship.html" style="font-size:25px;">Appreticeship Training</a></p></br>
+                  <p><a href="industrial.html" style="font-size:25px;">Industrial Training</a></p></br>
+                  <p><a href="internship.html" style="font-size:25px;">Internship Training</a></p></br>
+                  <p><a href="vocational.html" style="font-size:25px;">Vocational Training</a></p></br>
+                  <p><a href="faculty.html" style="font-size:25px;">Faculty Training</a></p></br>
+                    </p>
+                      </div>
+                      <div style="height:500px; width:20%; background-color:black; margin-left:1170px; margin-top:-530px;">
+                        <a href=""><img src="https://digicoders.in/public/assets/images/google-play-logo-featured.png" style="height:100px; width:200px; margin-top:20px; margin-left:60px;"></a>
+                        <a href=""><img src="https://cashfreelogo.cashfree.com/cashfree_certified_partner.png" style="height:100px; width:200px; margin-top:25px; margin-left:60px;"></a>
+                        <a href=""><img src="https://digicoders.in/public/assets/images/GemGovLogo.png" style="height:100px; width:200px; margin-top:25px; margin-left:60px;"></a>
+                        <a href=""><img src="https://digicoders.in/public/assets/images/StartupIndiaLogo.jpg" style="height:100px; width:200px; margin-top:25px; margin-left:60px;"></a>
+                      </div>
+  </div>
+  
+ 
+</body>
+</html>
